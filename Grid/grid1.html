@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            background-color: rgb(250, 250, 103);
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            grid-template-rows: 1fr 1fr ;
+            row-gap: 30px;
+            text-align: center; 
+            padding: 20px;
+
+        }
+        .vertical{
+            /* background-color: rgb(183, 230, 254); */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 200px;
+            column-gap: 20px;
+         
+        }
+        .horizontal{
+            /* background-color: rgb(183, 230, 254); */
+            grid-template-columns: 1fr;
+            border: 1px solid black;
+            border-radius: 20px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+        <div class="vertical">
+            <div  style="  border: 1px solid black;  border-radius: 10px;  background-color: lightgreen;">box 1</div>
+            <div style="  border: 1px solid black; border-radius: 10px; background-color: lightgreen;">box 2</div>
+            <div style="  border: 1px solid black; border-radius: 10px; background-color: lightgreen;">box 3</div>
+            <div style="  border: 1px solid black; border-radius: 10px; background-color: lightgreen;">box 4</div>
+        </div>
+        <div class="horizontal"> horizontal box</div>
+    </div>
+</body>
+</html>
