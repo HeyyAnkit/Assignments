@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        #main{
+            /* display: grid; */
+            height: 600px;
+            background-color: rgb(94, 176, 247);
+            display: grid;
+            grid-template-rows: 2fr 1fr 2fr;
+            row-gap: 20px;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .row1{
+            /* background-color: antiquewhite; */
+            display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 180px;
+        /* height: 200px; */
+        padding: 50px;
+        }
+        .row2{background-color: bisque;
+            border: 1px solid black;
+            height: 100px;
+            width: 180px;
+            margin-left: 200px;
+            border-radius: 20px;
+            
+        
+    
+    }
+
+        .row3{
+            background-color: blueviolet;
+            width: 500px;
+            height: 100px;
+            margin-left: 140px;
+            margin: 40px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="row1">
+             <div style="background-color: lightyellow; border-radius: 50%; text-align: center;  height: 150px; width: 150ppx;">circle1</div> 
+            <div style="background-color: lightyellow; border-radius: 50%; text-align: center; height: 150px; width: 150ppx;">circle2</div>
+ </div>
+        <div class="row2"> Square </div>
+        <div class="row3"> Rectangle</div>
+    </div>
+
+</body>
+</html>
